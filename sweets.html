@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweets | Lalitha Surya Sweets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/enlarge.png" type="image/x-icon">
+
+</head>
+<body class="dark">
+
+  <!-- 🌐 NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">Lalitha Surya Sweets</div>  
+      <div class="menu-toggle">☰</div>
+      <ul>
+        <li class="search-nav">
+          <i class="fas fa-search search-icon">🔍</i>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sweets.html" class="active">Sweets</a></li>
+        <li><a href="hot.html">Hot</a></li>
+        <li><a href="specials.html">Pickels</a></li>
+        <li><a href="giftpacks.html">Specials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="cart">🛒<span class="cart-counter" id="cart-counter">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🛍️ CART DRAWER -->
+  <div id="cart-drawer" class="cart-drawer">
+    <button id="cart-close" class="cart-close">&times;</button>
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+    </div>
+    <div id="cart-items"></div>
+    <div id="cart-total">Total: ₹0</div>
+    <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+
+  <!-- 🍭 SWEETS SECTION -->
+  <section class="sweets-section" id="sweets">
+    <h2 class="section-title">Our Delicious Sweets</h2> 
+
+    <div class="product-grid">
+      <!-- Sweet 1 -->
+      <div class="product" data-name="White Roll" data-price="250">
+        <img src="images/sweet/white_roll.jpeg" alt="Sweet">
+        <div class="product-info">
+          <h3>White Roll</h3><br>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Sweet 2 -->
+      <div class="product" data-name="White Kalakand" data-price="130">
+        <img src="images/sweet/white_kalakand.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>White Kalakand</h3><br>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Sweet 3 -->
+      <div class="product" data-name="Verusenaga Laddu" data-price="80">
+        <img src="images/sweet/verusenaga_laddu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Verusenaga Laddu / Palli Laddu</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Thokkudu Laddu" data-price="100">
+        <img src="images/sweet/thokkudu-laddu.jpeg" alt="Sweet">
+        <div class="product-info">
+          <h3>Thokkudu Laddu</h3>
+          <p class="price">From ₹100</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="100">500g</button>
+            <button class="weight-btn" data-extra="300">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Sunnundalu" data-price="130">
+        <img src="images/sweet/sunnundalu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Sunnundalu</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="SugarFree Dry Fruit Laddu" data-price="250">
+        <img src="images/sweet/sugarfree_dry_fruit_laddu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Sugar Free Dry Fruit Laddu</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Soan Papdi" data-price="130">
+        <img src="images/sweet/soan-papdi.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Soan Papdi</h3><br>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Roast Kalakand" data-price="130">
+        <img src="images/sweet/roast_kalakand.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Roast Kalakand</h3><br>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Rasgulla" data-price="100">
+        <img src="images/sweet/rasgulla.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Rasgulla</h3><br>
+          <p class="price">From ₹100</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="100">500g</button>
+            <button class="weight-btn" data-extra="300">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Raagi Laddu" data-price="100">
+        <img src="images/sweet/Raagi-laddu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Raagi Laddu</h3><br>
+          <p class="price">From ₹100</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="100">500g</button>
+            <button class="weight-btn" data-extra="300">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Pista Kalakand" data-price="130">
+        <img src="images/sweet/pista_kalakand.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Pista Kalakand</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Panner Jalebi" data-price="130">
+        <img src="images/sweet/panner_jalebi.jpeg" alt="Sweet">
+        <div class="product-info">
+          <h3>Panner Jalebi</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Nuvvula Ariselu" data-price="80">
+        <img src="images/sweet/Nuvvula_ariselu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Nuvvula Ariselu</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Nuvvula Laddu" data-price="100">
+        <img src="images/sweet/Nuvvula-laddu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Nuvvula Laddu</h3>
+          <p class="price">From ₹100</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="100">500g</button>
+            <button class="weight-btn" data-extra="300">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Mysore Pak" data-price="70">
+        <img src="images/sweet/mysore_pak.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Mysore Pak</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Motichur Laddu" data-price="100">
+        <img src="images/sweet/motichur-laddu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Motichur Laddu</h3>
+          <p class="price">From ₹100</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="100">500g</button>
+            <button class="weight-btn" data-extra="300">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Milk Mysore Pak" data-price="130">
+        <img src="images/sweet/milk_mysore_pak.jpeg" alt="Sweet">
+        <div class="product-info">
+          <h3>Milk Mysore Pak</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Malai Puri" data-price="130">
+        <img src="images/sweet/Malai_Puri.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Malai Puri</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="MakkanPeda" data-price="100">
+        <img src="images/sweet/MakkanPeda.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>MakkanPeda</h3>
+          <p class="price">From ₹100</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="100">500g</button>
+            <button class="weight-btn" data-extra="300">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Madhu Barfi" data-price="130">
+        <img src="images/sweet/madhu_barfi.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Madhu Barfi</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Loose Kalakand" data-price="130">
+        <img src="images/sweet/loose_kalakand.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Loose Kalakand</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kova Golilu" data-price="130">
+        <img src="images/sweet/kova_golilu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kova Golilu</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Mysore Pak" data-price="130">
+        <img src="images/sweet/kaju_mysore_pak.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaju Mysore Pak</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="120">500g</button>
+            <button class="weight-btn" data-extra="370">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Kisti" data-price="250">
+        <img src="images/sweet/kaju_kisti.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaju Kisti</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaja" data-price="80">
+        <img src="images/sweet/kaja.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaja</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="220">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Anjeer Rolls" data-price="250">
+        <img src="images/sweet/anjeer_rolls.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Anjeer Rolls</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Ariselu" data-price="70">
+        <img src="images/sweet/ariselu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Ariselu</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Badam Barfi" data-price="130">
+        <img src="images/sweet/badam_barfi.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Badam Barfi</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Badusha" data-price="80">
+        <img src="images/sweet/badusha.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Badusha</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="220">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Bellam Gavvalu" data-price="60">
+        <img src="images/sweet/bellam_gavvalu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Bellam Gavvalu</h3>
+          <p class="price">From ₹60</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="60">500g</button>
+            <button class="weight-btn" data-extra="180">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Bellam Kommulu" data-price="60">
+        <img src="images/sweet/bellam_kommulu.jpeg" alt="Sweet">
+        <div class="product-info">
+          <h3>Bellam Kommulu</h3><br>
+          <p class="price">From ₹60</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="60">500g</button>
+            <button class="weight-btn" data-extra="180">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Besan Laddu" data-price="90">
+        <img src="images/sweet/besan_laddu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Besan Laddu</h3><br>
+          <p class="price">From ₹90</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="90">500g</button>
+            <button class="weight-btn" data-extra="170">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Black Halwa" data-price="200">
+        <img src="images/sweet/black_halwa.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Black Halwa</h3><br>
+          <p class="price">From ₹200</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="200">500g</button>
+            <button class="weight-btn" data-extra="600">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Bobbatlu" data-price="12">
+        <img src="images/sweet/bobbatlu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Special Ghee Bobbatlu</h3>
+          <p class="price">₹12</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Piece :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">12Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Boondi Chikki" data-price="70">
+        <img src="images/sweet/boondi_chikki.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Boondi Chikki</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Carrot Kalakand" data-price="130">
+        <img src="images/sweet/carrot_kalakand.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Carrot Kalakand</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Chandrakala" data-price="80">
+        <img src="images/sweet/Chandrakala.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Chandrakala</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Chinna Kaja" data-price="80">
+        <img src="images/sweet/chinna_kaja.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Chinna Kaja</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="220">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Dry Fruit Barfi" data-price="230">
+        <img src="images/sweet/dry_fruit_barfi.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Dry Fruit Barfi</h3>
+          <p class="price">From ₹230</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="220">500g</button>
+            <button class="weight-btn" data-extra="670">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Dry Fruit Kalakand" data-price="150">
+        <img src="images/sweet/dry_fruit_kalakand.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Dry Fruit Kalakand</h3>
+          <p class="price">From ₹150</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="150">500g</button>
+            <button class="weight-btn" data-extra="450">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Dry Fruit Chikki" data-price="250">
+        <img src="images/sweet/dry_fruit_chikki.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Dry Fruit Chikki</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Dry Fruit Laddu" data-price="230">
+        <img src="images/sweet/dry_fruit_laddu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Dry Fruit Laddu</h3>
+          <p class="price">From ₹230</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="220">500g</button>
+            <button class="weight-btn" data-extra="670">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Dry Fruit Putharekulu" data-price="35">
+        <img src="images/sweet/dry_fruit_putharekulu.jpg" alt="Kaju Katli">
+        <div class="product-info">
+          <h3>Dry Fruit Putharekulu</h3>
+          <p class="price">₹35</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Piece :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">35Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Gorumitilu" data-price="70">
+        <img src="images/sweet/gorumitilu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Gorumitilu</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Groundnut Chikki" data-price="80">
+        <img src="images/sweet/groundnut_chikki.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Groundnut Chikki</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Gulab Jamun" data-price="130">
+        <img src="images/sweet/gulab.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Gulab Jamun</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="120">500g</button>
+            <button class="weight-btn" data-extra="370">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Ice Cream Barfi" data-price="130">
+        <img src="images/sweet/ice_cream_barfi.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Ice Cream Barfi</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Jangery" data-price="70">
+        <img src="images/sweet/jangery.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Jangery</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Junnu" data-price="80">
+        <img src="images/sweet/junnu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Junnu</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kajjikayalu" data-price="70">
+        <img src="images/sweet/kajjikayalu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kajjikayalu</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Barfi" data-price="230">
+        <img src="images/sweet/kaju_barfi.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaju Barfi</h3>
+          <p class="price">From ₹230</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="220">500g</button>
+            <button class="weight-btn" data-extra="670">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Bites" data-price="250">
+        <img src="images/sweet/Kaju_Bites.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaju Bites</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Bullets" data-price="250">
+        <img src="images/sweet/kaju_bullets.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaju Bullets</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Chikki" data-price="250">
+        <img src="images/sweet/kaju_chikki.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaju Chikki</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Pootharekulu" data-price="30">
+        <img src="images/sweet/kaju_pootharekulu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kaju Pootharekulu</h3>
+          <p class="price">₹30</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Piece :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">30Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kalakand" data-price="130">
+        <img src="images/sweet/kalakand.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kalakand</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kova Billalu" data-price="130">
+        <img src="images/sweet/kova_billalu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Kova Billalu</h3>
+          <p class="price">From ₹130</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="130">500g</button>
+            <button class="weight-btn" data-extra="390">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Plain Putharekulu" data-price="20">
+        <img src="images/sweet/plain_putharekulu.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Plain Putharekulu</h3>
+          <p class="price">₹20</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Piece :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">20Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Rasmalai" data-price="100">
+        <img src="images/sweet/rasmalai.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Rasmalai</h3>
+          <p class="price">₹100</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Box :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">100Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Bellam Boondi" data-price="60">
+        <img src="images/sweet/bellam_boondi.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Bellam Boondi</h3>
+          <p class="price">From ₹60</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="60">500g</button>
+            <button class="weight-btn" data-extra="180">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Basanthi" data-price="30">
+        <img src="images/sweet/Basanthi.jpeg" alt="Sweet">
+        <div class="product-info">
+          <h3>Basanthi</h3>
+          <p class="price">₹30</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Box :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">30Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Badam Milk" data-price="50">
+        <img src="images/sweet/badam_milk.jpg" alt="Sweet">
+        <div class="product-info">
+          <h3>Badam Milk</h3>
+          <p class="price">₹50</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Bottle :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">50Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>Established in 2006, <br><strong>Lalitha Surya Sweets</strong> has been a trusted name for authentic Indian sweets and traditional snacks.</p>
+      <p>With over 18 years of experience in crafting sweets the traditional way, we take pride in using premium ingredients, pure ghee, and age-old recipes passed down through generations.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3 id="contact">Contact</h3>
+      <p>📞 +91 9133777448</p> <br><br>
+      <p>✉️ surya1akula@gmail.com</p><br><br>
+      <p>⏰ Mon - Sun: 9:00 AM - 10:00 PM</p>
+    </div>
+
+    <!-- Location -->
+    <div class="footer-col">
+      <h3>Location</h3>
+      <p>🏬 Lalitha Surya Sweets</p> <br>
+      <p>Near Ganganamma temple center, Jangareddigudem, Andhra Pradesh 534447</p><br>
+      <p><a id="map" target="_blank" href="https://maps.app.goo.gl/aydzAxEUTrdk5MWk7">📍 View on Google Maps</a></p>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-col">
+      <h3>Policies</h3>
+      <p><a href="#">Refund Policy</a></p><br>
+      <p><a href="#">Shipping Policy</a></p><br>
+      <p><a href="#">Terms & Conditions</a></p><br>
+      <p><a href="#">Privacy Policy</a></p><br>
+    </div>
+  </div>
+  <div class="footer-social">
+  <a href="#" target="_blank" class="social-icon svg-icon fb">
+    <svg viewBox="0 0 24 24">
+      <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H8.1v-2.9h2.34V9.41c0-2.32 1.38-3.6 3.49-3.6.7 0 1.44.12 1.44.12v2.57h-1.15c-1.13 0-1.48.7-1.48 1.42v1.7h2.52l-.4 2.9h-2.12V22c4.78-.8 8.44-4.94 8.44-9.93z"/>
+    </svg>
+  </a>
+
+  <a href="https://wa.me/9133777448" target="_blank" class="social-icon svg-icon wa">
+    <svg viewBox="0 0 32 32">
+      <path d="M19.11 17.49c-.33-.17-1.92-.95-2.22-1.06-.3-.11-.52-.17-.75.17-.22.33-.86 1.06-1.05 1.28-.19.22-.39.25-.72.08-.33-.17-1.38-.51-2.63-1.63-.97-.86-1.62-1.92-1.81-2.25-.19-.33-.02-.51.14-.68.14-.14.33-.36.5-.55.17-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.75-1.8-1.03-2.47-.27-.66-.55-.57-.75-.58-.19-.01-.41-.01-.63-.01s-.58.08-.88.41c-.3.33-1.15 1.12-1.15 2.73s1.18 3.17 1.35 3.39c.17.22 2.33 3.55 5.65 4.98.79.34 1.41.54 1.9.69.8.26 1.53.22 2.1.13.64-.1 1.92-.78 2.19-1.53.27-.75.27-1.39.19-1.53-.08-.14-.3-.22-.63-.38zM16 3C8.83 3 3 8.83 3 16c0 2.82.92 5.43 2.48 7.55L3 29l5.61-2.43C10.57 27.08 13.18 28 16 28c7.17 0 13-5.83 13-13S23.17 3 16 3z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.instagram.com/lalitha_surya_sweets?igsh=MWk3cWVqajljaTZrag==" target="_blank" class="social-icon svg-icon insta">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+    </svg>
+  </a>
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Lalitha Surya Sweets. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <!-- SEARCH OVERLAY + QUICK VIEW (add near end of body) -->
+<div id="search-overlay" class="search-overlay" aria-hidden="true">
+  <div class="search-panel">
+    <button class="search-close" aria-label="Close search">✕</button>
+    <div class="search-top">
+      <input id="overlay-search-input" type="search" placeholder="Search items..." autocomplete="off">
+    </div>
+    <div id="search-results" class="search-results">
+      <!-- results injected here -->
+    </div>
+  </div>
+</div>
+
+<!-- Quick View modal -->
+<div id="quickview-modal" class="quickview-modal" aria-hidden="true">
+  <div class="quickview-card">
+    <button class="quickview-close" aria-label="Close">✕</button>
+    <div class="quickview-body">
+      <img id="qv-img" src="" alt="">
+      <div class="qv-info">
+        <h3 id="qv-title"></h3>
+        <p class="qv-price" id="qv-price">₹0</p>
+
+        <div id="qv-weight-area" class="qv-weight-area">
+          <!-- weight controls injected here -->
+        </div>
+
+        <button id="qv-add-cart" class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

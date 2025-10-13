@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot | Lalitha Surya Sweets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/enlarge.png" type="image/x-icon">
+</head>
+<body class="dark">
+
+  <!-- 🌐 NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">Lalitha Surya Sweets</div>
+      <div class="menu-toggle">☰</div>
+      <ul>
+        <li class="search-nav">
+          <i class="fas fa-search search-icon">🔍</i>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+        <li><a href="hot.html" class="active">Hot</a></li>
+        <li><a href="specials.html">Pickels</a></li>
+        <li><a href="giftpacks.html">Specials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="cart">🛒<span class="cart-counter" id="cart-counter">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🛍️ CART DRAWER -->
+  <div id="cart-drawer" class="cart-drawer">
+    <button id="cart-close" class="cart-close">&times;</button>
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+    </div>
+    <div id="cart-items"></div>
+    <div id="cart-total">Total: ₹0</div>
+    <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+
+  <!-- 🍭 SWEETS SECTION -->
+  <section class="spicy-section" id="spicy">
+    <h2 class="section-title">Our Hot Snacks</h2> 
+
+    <div class="product-grid">
+      <!-- Spicy 1 -->
+      <div class="product" data-name="Atukulu" data-price="50">
+        <img src="images/spicy/atukulu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Atukulu</h3>
+          <p class="price">₹50</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Packet :</button>
+            <!-- <button class="weight-btn" data-extra="50"></button> -->
+            <button class="weight-btn" data-extra="0">50Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Spicy 2 -->
+      <div class="product" data-name="Butter Mixture" data-price="80">
+        <img src="images/spicy/butter_mixture.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Butter Mixture</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Spicy 3 -->
+      <div class="product" data-name="Chegodilu" data-price="70">
+        <img src="images/spicy/chegodilu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Chegodilu</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Chinna Chegodilu" data-price="60">
+        <img src="images/spicy/chinna_chegodilu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Chinna Chegodilu</h3>
+          <p class="price">From ₹60</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="60">500g</button>
+            <button class="weight-btn" data-extra="180">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Chitti Appadalu" data-price="60">
+        <img src="images/spicy/chitti_appadalu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Chitti Appadalu</h3>
+          <p class="price">From ₹60</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="60">500g</button>
+            <button class="weight-btn" data-extra="180">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Gathia" data-price="70">
+        <img src="images/spicy/gathia.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Gathia</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Janthikalu" data-price="80">
+        <img src="images/spicy/Janthikalu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Janthikalu</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Fry" data-price="250">
+        <img src="images/spicy/Kaju-fry.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Kaju Fry</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="250">500g</button>
+            <button class="weight-btn" data-extra="750">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kaju Pakoda" data-price="180">
+        <img src="images/spicy/kaju_pakoda.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Kaju Pakoda</h3>
+          <p class="price">From ₹180</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="180">500g</button>
+            <button class="weight-btn" data-extra="540">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Kakarkaya Pakoda" data-price="100">
+        <img src="images/spicy/kakarkaya_pakoda.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Kakarkaya Pakoda</h3>
+          <p class="price">From ₹100</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="100">500g</button>
+            <button class="weight-btn" data-extra="300">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Methati Pakoda" data-price="70">
+        <img src="images/spicy/methati_pakoda.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Methati Pakoda</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Navratan Mixture" data-price="80">
+        <img src="images/spicy/navratan_mixture.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Navratan Mixture</h3>
+          <p class="price">From ₹80</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="80">500g</button>
+            <button class="weight-btn" data-extra="240">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Nuvvula Murukulu" data-price="60">
+        <img src="images/spicy/nuvvula.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Nuvvula Murukulu</h3>
+          <p class="price">From ₹60</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="60">500g</button>
+            <button class="weight-btn" data-extra="180">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Onion Pakoda" data-price="70">
+        <img src="images/spicy/Onion_Pakoda.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Onion Pakoda</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Palli Pakoda" data-price="70">
+        <img src="images/spicy/palli_pakoda.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Palli Pakoda</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Pedha Appadalu" data-price="70">
+        <img src="images/spicy/pedha_appadalu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Pedha Appadalu</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Ribbon Pakoda" data-price="70">
+        <img src="images/spicy/ribbon-pakoda.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Ribbon Pakoda</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Sanna Karapusa" data-price="70">
+        <img src="images/spicy/sanna-karapusa.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Sanna Karapusa</h3>
+          <p class="price">From ₹70</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="70">500g</button>
+            <button class="weight-btn" data-extra="210">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Sola Chips" data-price="50">
+        <img src="images/spicy/sola_chips.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Sola Chips</h3>
+          <p class="price">₹50</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Packet :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="100">500g</button> -->
+            <button class="weight-btn" data-extra="0">50Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Vamu Biscuit" data-price="50">
+        <img src="images/spicy/vamu_biscuits.jpeg" alt="Spicy">
+        <div class="product-info">
+          <h3>Vamu Biscuit</h3>
+          <p class="price">₹50</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Packet :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="50">500g</button> -->
+            <button class="weight-btn" data-extra="0">50Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Vampusa" data-price="60">
+        <img src="images/spicy/vamupusa.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Vampusa</h3>
+          <p class="price">From ₹60</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="60">500g</button>
+            <button class="weight-btn" data-extra="180">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Batani" data-price="30">
+        <img src="images/spicy/batani.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Batani</h3>
+          <p class="price">₹30</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Packet :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="100">500g</button> -->
+            <button class="weight-btn" data-extra="0">30Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Senagalu" data-price="30">
+        <img src="images/spicy/senagalu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Senagalu</h3>
+          <p class="price">₹30</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Packet :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="100">500g</button> -->
+            <button class="weight-btn" data-extra="0">30Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-name="Senagapappu" data-price="30">
+        <img src="images/spicy/senagapappu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Senagapappu</h3>
+          <p class="price">₹30</p>
+
+          <div class="weight-options">
+            <button  data-extra="0" style="border: none; background-color: white; font-weight: 600;">1 Packet :</button>
+            <!-- <button class="weight-btn active" data-extra="0">250g</button> -->
+            <!-- <button class="weight-btn" data-extra="100">500g</button> -->
+            <button class="weight-btn" data-extra="0">30Rs</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- <div class="product" data-name="Junnu" data-price="250">
+        <img src="images/sweet/junnu.jpg" alt="Spicy">
+        <div class="product-info">
+          <h3>Junnu</h3>
+          <p class="price">From ₹250</p>
+
+          <div class="weight-options">
+            <button class="weight-btn active" data-extra="0">250g</button>
+            <button class="weight-btn" data-extra="50">500g</button>
+            <button class="weight-btn" data-extra="150">1kg</button>
+          </div>
+
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>Established in 2006, <br><strong>Lalitha Surya Sweets</strong> has been a trusted name for authentic Indian sweets and traditional snacks.</p>
+      <p>With over 18 years of experience in crafting sweets the traditional way, we take pride in using premium ingredients, pure ghee, and age-old recipes passed down through generations.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3 id="contact">Contact</h3>
+      <p>📞 +91 9133777448</p> <br><br>
+      <p>✉️ surya1akula@gmail.com</p><br><br>
+      <p>⏰ Mon - Sun: 9:00 AM - 10:00 PM</p>
+    </div>
+
+    <!-- Location -->
+    <div class="footer-col">
+      <h3>Location</h3>
+      <p>🏬 Lalitha Surya Sweets</p> <br>
+      <p>Near Ganganamma temple center, Jangareddigudem, Andhra Pradesh 534447</p><br>
+      <p><a id="map" target="_blank" href="https://maps.app.goo.gl/aydzAxEUTrdk5MWk7">📍 View on Google Maps</a></p>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-col">
+      <h3>Policies</h3>
+      <p><a href="#">Refund Policy</a></p><br>
+      <p><a href="#">Shipping Policy</a></p><br>
+      <p><a href="#">Terms & Conditions</a></p><br>
+      <p><a href="#">Privacy Policy</a></p><br>
+    </div>
+  </div>
+  <div class="footer-social">
+  <a href="#" target="_blank" class="social-icon svg-icon fb">
+    <svg viewBox="0 0 24 24">
+      <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H8.1v-2.9h2.34V9.41c0-2.32 1.38-3.6 3.49-3.6.7 0 1.44.12 1.44.12v2.57h-1.15c-1.13 0-1.48.7-1.48 1.42v1.7h2.52l-.4 2.9h-2.12V22c4.78-.8 8.44-4.94 8.44-9.93z"/>
+    </svg>
+  </a>
+
+  <a href="https://wa.me/9133777448" target="_blank" class="social-icon svg-icon wa">
+    <svg viewBox="0 0 32 32">
+      <path d="M19.11 17.49c-.33-.17-1.92-.95-2.22-1.06-.3-.11-.52-.17-.75.17-.22.33-.86 1.06-1.05 1.28-.19.22-.39.25-.72.08-.33-.17-1.38-.51-2.63-1.63-.97-.86-1.62-1.92-1.81-2.25-.19-.33-.02-.51.14-.68.14-.14.33-.36.5-.55.17-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.75-1.8-1.03-2.47-.27-.66-.55-.57-.75-.58-.19-.01-.41-.01-.63-.01s-.58.08-.88.41c-.3.33-1.15 1.12-1.15 2.73s1.18 3.17 1.35 3.39c.17.22 2.33 3.55 5.65 4.98.79.34 1.41.54 1.9.69.8.26 1.53.22 2.1.13.64-.1 1.92-.78 2.19-1.53.27-.75.27-1.39.19-1.53-.08-.14-.3-.22-.63-.38zM16 3C8.83 3 3 8.83 3 16c0 2.82.92 5.43 2.48 7.55L3 29l5.61-2.43C10.57 27.08 13.18 28 16 28c7.17 0 13-5.83 13-13S23.17 3 16 3z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.instagram.com/lalitha_surya_sweets?igsh=MWk3cWVqajljaTZrag==" target="_blank" class="social-icon svg-icon insta">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+    </svg>
+  </a>
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Lalitha Surya Sweets. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- SEARCH OVERLAY + QUICK VIEW (add near end of body) -->
+<div id="search-overlay" class="search-overlay" aria-hidden="true">
+  <div class="search-panel">
+    <button class="search-close" aria-label="Close search">✕</button>
+    <div class="search-top">
+      <input id="overlay-search-input" type="search" placeholder="Search items..." autocomplete="off">
+    </div>
+    <div id="search-results" class="search-results">
+      <!-- results injected here -->
+    </div>
+  </div>
+</div>
+
+<!-- Quick View modal -->
+<div id="quickview-modal" class="quickview-modal" aria-hidden="true">
+  <div class="quickview-card">
+    <button class="quickview-close" aria-label="Close">✕</button>
+    <div class="quickview-body">
+      <img id="qv-img" src="" alt="">
+      <div class="qv-info">
+        <h3 id="qv-title"></h3>
+        <p class="qv-price" id="qv-price">₹0</p>
+
+        <div id="qv-weight-area" class="qv-weight-area">
+          <!-- weight controls injected here -->
+        </div>
+
+        <button id="qv-add-cart" class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
