@@ -16,7 +16,7 @@
       .hamburger { display: flex; }
     }
 
-    .banner { width: 100%; height: 80vh; background: url('images/banner.jpg') center/cover no-repeat; display: flex; justify-content: center; align-items: center; color: white; font-size: 2.5rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    .banner { width: 100%; height: 80vh; background: url('banner.jpg') center/cover no-repeat; display: flex; justify-content: center; align-items: center; color: white; font-size: 2.5rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
     section { padding: 3rem 1rem; max-width: 1200px; margin: auto; }
     h2 { text-align: center; margin-bottom: 2rem; color: #fb8500; font-size: 2rem; }
 
@@ -517,6 +517,7 @@
   .search-panel { margin: 30px 14px; padding: 14px; }
   .search-results { grid-template-columns: repeat(2, 1fr); }
 }
+
 
 
 
