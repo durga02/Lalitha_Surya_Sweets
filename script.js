@@ -415,4 +415,65 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
 });
+
+
+
+function showInfo(name, image, ingredients, description) {
+  const oldPopup = document.querySelector('.info-popup');
+  if (oldPopup) oldPopup.remove();
+
+  const popup = document.createElement('div');
+  popup.className = 'info-popup';
+  popup.innerHTML = `
+    <div class="info-content">
+      <button class="info-close" onclick="closeInfo()">×</button>
+      <img src="${image}" alt="${name}">
+      <h2>${name}</h2>
+
+      <div class="info-section">
+        <h4 style="padding-bottom:9px;">Ingredients:</h4>
+        <ul>
+          ${ingredients.map(item => `<li style="list-style: square; padding-bottom:7px">${item}</li>`).join('')}
+        </ul>
+      </div>
+      <br><br>
+      <div class="info-section">
+        <h4 style="padding-bottom:3px;">Description:</h4>
+        <p style="font-weight:600;">${description}</p>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(popup);
+  popup.addEventListener('click', e => {
+    if (e.target === popup) closeInfo();
+  });
+}
+
+function closeInfo() {
+  const popup = document.querySelector('.info-popup');
+  if (popup) {
+    popup.style.animation = 'fadeOut 0.25s ease forwards';
+    setTimeout(() => popup.remove(), 250);
+  }
+}
+
+// ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+async function loadProducts() {
+  const res = await fetch("/api/products");
+  const data = await res.json();
+
+  const container = document.getElementById("product-container");
+  container.innerHTML = data.map(p => `
+    <div class="product">
+      <img src="${p.image}" alt="${p.name}">
+      <h3>${p.name}</h3>
+      <p>₹${p.price}</p>
+      <p>${p.description}</p>
+    </div>
+  `).join('');
+}
+
+document.addEventListener("DOMContentLoaded", loadProducts);
